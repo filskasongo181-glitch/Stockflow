@@ -209,13 +209,13 @@ from typing import List
 from datetime import datetime
 from pydantic import BaseModel
 
-from ..database_online import get_db
-from ..models.entrepot import Entrepot
-from ..schemas.entrepot import (
+from database_online import get_db
+from models.entrepot import Entrepot
+from schemas.entrepot import (
     EntrepotCreate, EntrepotSync, EntrepotUpdate, EntrepotResponse,
 )
-from ..routes.auth import get_current_user
-from ..models.user import User
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 

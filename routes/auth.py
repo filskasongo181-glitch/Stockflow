@@ -11,9 +11,9 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
 import os
-from backend.database_online import get_db
-from backend.models.user import User
-from backend.schemas.user import UserCreate, UserLogin, UserResponse, Token
+from database_online import get_db
+from models.user import User
+from schemas.user import UserCreate, UserLogin, UserResponse, Token
 
 
 

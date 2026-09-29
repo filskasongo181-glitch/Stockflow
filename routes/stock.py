@@ -206,13 +206,13 @@ from typing import List
 from datetime import datetime
 from pydantic import BaseModel
 
-from ..database_online import get_db
-from ..models.stock import Stock
-from ..models.item import Item
-from ..models.entrepot import Entrepot
-from ..schemas.stock import StockCreate, StockUpdate, StockResponse, StockSync
-from ..routes.auth import get_current_user
-from ..models.user import User
+from database_online import get_db
+from models.stock import Stock
+from models.item import Item
+from models.entrepot import Entrepot
+from schemas.stock import StockCreate, StockUpdate, StockResponse, StockSync
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 

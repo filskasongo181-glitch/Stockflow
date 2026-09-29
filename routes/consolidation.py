@@ -155,7 +155,7 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 # Même get_db que mouvements / categories / items (connexion déjà initialisée au startup)
-from ..database_online import get_db
+from database_online import get_db
 
 log = logging.getLogger(__name__)
 router = APIRouter()

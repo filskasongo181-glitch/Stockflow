@@ -327,18 +327,18 @@ from typing import List
 from datetime import datetime
 from pydantic import BaseModel
 
-from ..database_online import get_db
-from ..models.mouvement import MouvementRecent, MouvementArchived
-from ..models.item import Item
-from ..models.entrepot import Entrepot
-from ..schemas.mouvement import (
+from database_online import get_db
+from models.mouvement import MouvementRecent, MouvementArchived
+from models.item import Item
+from models.entrepot import Entrepot
+from schemas.mouvement import (
     MouvementCreate,
     MouvementUpdate,
     MouvementResponse,
     MouvementSync,
 )
-from ..routes.auth import get_current_user
-from ..models.user import User
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 

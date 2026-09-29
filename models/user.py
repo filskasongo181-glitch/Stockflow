@@ -2,7 +2,7 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
-from backend.database_online import Base
+from database_online import Base
 
 
 class User(Base):

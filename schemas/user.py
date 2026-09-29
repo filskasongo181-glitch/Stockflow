@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 from datetime import datetime
 
-from backend.models import user
+from models import user
 
 # ----- Schéma de la base -----
 class UserBase(BaseModel):

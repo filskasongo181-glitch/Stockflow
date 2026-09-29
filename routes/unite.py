@@ -206,11 +206,11 @@ from typing import List
 from datetime import datetime
 from pydantic import BaseModel
 
-from ..database_online import get_db
-from ..models.unite import Unite
-from ..schemas.unite import UniteCreate, UniteUpdate, UniteResponse, UniteSync
-from ..routes.auth import get_current_user
-from ..models.user import User
+from database_online import get_db
+from models.unite import Unite
+from schemas.unite import UniteCreate, UniteUpdate, UniteResponse, UniteSync
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 

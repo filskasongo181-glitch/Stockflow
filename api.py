@@ -34,34 +34,34 @@ app.add_middleware(
 # ============================================
 #     IMPORTS DES MODELES
 # ============================================
-from  backend.models import user
-import backend.database_online as db_online
-from .database_online import Base, init_online_engine
+# from  .models import user
+import database_online as db_online
+from database_online import Base, init_online_engine
 # engine, SessionLocal, test_connection
 
-from .models.user            import User
-from .models.categorie       import Categorie
-from .models.entrepot        import Entrepot
-from .models.unite           import Unite
-from .models.item            import Item
-from .models.audit_log       import AuditLog
-from .models.mouvement       import MouvementRecent, MouvementArchived, StockAjustment
-from .models.stock           import Stock
+from models.user            import User
+from models.categorie       import Categorie
+from models.entrepot        import Entrepot
+from models.unite           import Unite
+from models.item            import Item
+from models.audit_log       import AuditLog
+from models.mouvement       import MouvementRecent, MouvementArchived, StockAjustment
+from models.stock           import Stock
 
 # ============================================
 #     IMPORTS DES ROUTES
 # ============================================
-from backend.routes import auth
-from backend.routes import users
-from backend.routes import categories
-from backend.routes import items
-from backend.routes import entrepots
-from backend.routes import mouvements
-from backend.routes import stock_ajustments
-from backend.routes import unite
-from backend.routes import stock
-from backend.routes import audit_log
-from backend.routes import consolidation
+from routes import auth
+from routes import users
+from routes import categories
+from routes import items
+from routes import entrepots
+from routes import mouvements
+from routes import stock_ajustments
+from routes import unite
+from routes import stock
+from routes import audit_log
+from routes import consolidation
 
 # ============================================
 #     Include API routes

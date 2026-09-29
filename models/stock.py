@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, ForeignKey, REAL, Float, String, DateTime
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from backend.database_online import Base
+from database_online import Base
 
 
 class Stock(Base):

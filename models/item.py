@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, REAL, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from ..database_online import Base
+from database_online import Base
 
 class Item(Base):
 

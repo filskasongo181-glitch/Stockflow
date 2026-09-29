@@ -14,17 +14,17 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import datetime
 
-from ..database_online import get_db
-from ..models.categorie import Categorie
-from ..schemas.categorie import (
+from database_online import get_db
+from models.categorie import Categorie
+from schemas.categorie import (
     CategorieCreate,
     CategorieUpdate,
     CategorieSync,
     CategorieResponse,
     LinkLocal
 )
-from ..routes.auth import get_current_user
-from ..models.user import User
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 

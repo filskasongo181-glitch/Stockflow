@@ -14,9 +14,9 @@ from sqlalchemy import text
 from typing import List, Any
 
 # Adapte ces imports à ton projet :
-from ..database_online import get_db
-from ..routes.auth import get_current_user
-from ..models.user import User
+from database_online import get_db
+from routes.auth import get_current_user
+from models.user import User
 
 router_stocks = APIRouter()
 router_mouvements = APIRouter()

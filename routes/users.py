@@ -7,10 +7,10 @@ from typing import List
 from datetime import datetime
 from pydantic import BaseModel
 
-from ..database_online import get_db
-from ..models.user import User
-from ..schemas.user import PasswordUpdate, UserCreate, UserSync, UserUpdate, UserResponse
-from ..routes.auth import get_current_user, hash_password
+from database_online import get_db
+from models.user import User
+from schemas.user import PasswordUpdate, UserCreate, UserSync, UserUpdate, UserResponse
+from routes.auth import get_current_user, hash_password
 
 router = APIRouter()
 

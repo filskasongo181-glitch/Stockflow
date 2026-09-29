@@ -518,11 +518,11 @@ import base64
 import binascii
 import hashlib
 
-from ..database_online import get_db
-from ..models.item import Item
-from ..schemas.item import ItemCreate, ItemUpdate, ItemResponse, ItemSync
-from ..routes.auth import get_current_user
-from ..models.user import User
+from database_online import get_db
+from models.item import Item
+from schemas.item import ItemCreate, ItemUpdate, ItemResponse, ItemSync
+from routes.auth import get_current_user
+from models.user import User
 
 router = APIRouter()
 
