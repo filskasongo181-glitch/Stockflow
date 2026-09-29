@@ -6,5 +6,6 @@ pymysql
 fastapi
 sqlalchemy
 python-dotenv
-python-jose
+python-jose[cryptography]
+email-validator
 
