@@ -1,5 +1,6 @@
 flask
 gunicorn
+uvicorn
 flask-cors
 pymysql
 fastapi
