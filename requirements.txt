@@ -6,3 +6,5 @@ pymysql
 fastapi
 sqlalchemy
 python-dotenv
+python-jose
+
