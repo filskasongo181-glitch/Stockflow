@@ -26,7 +26,7 @@ app = FastAPI(
 # ============================================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://stockflow-7q5a.onrender.com", "http://localhost:3000"], 
+    allow_origins=["https://stockflow-web-2rpo.onrender.com", "http://localhost:3000"], 
     allow_methods=["*"],
     allow_headers=["*"],
 )
