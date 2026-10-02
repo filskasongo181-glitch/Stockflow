@@ -73,7 +73,6 @@ app.include_router(entrepots.router,        prefix="/entrepots",         tags=["
 app.include_router(unite.router,            prefix="/unites",            tags=["Unités"])
 app.include_router(items.router,            prefix="/items",             tags=["Articles"])
 app.include_router(mouvements.router,       prefix="/mouvements",        tags=["Mouvements"])
-app.include_router(mouvements.router,       prefix="/mouvements/archived", tags=["Mouvements archivés"])
 app.include_router(stock_ajustments.router, prefix="/mouvements/ajustements",tags=["Stock Ajustements"])
 app.include_router(stock.router,            prefix="/stocks",            tags=["Stocks"])
 app.include_router(audit_log.router,        prefix="/logs",              tags=["Audit Logs"])
