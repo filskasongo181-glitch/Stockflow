@@ -587,3 +587,36 @@ def delete_recent(
     mvt.synced = 0
     db.commit()
     return {"message": f"Mouvement {mvt_id} supprimé"}
+
+
+
+# ============================================================
+# ARCHIVES (CRUD archives)
+# ============================================================
+
+@router.get("/archived", response_model=List[MouvementResponse])
+def get_archived(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Liste tous les mouvements archivés (deleted=0)."""
+    return (
+        db.query(MouvementArchived)
+        .filter(MouvementArchived.deleted == 0)
+        .order_by(MouvementArchived.created_at.desc())
+        .all()
+    )
+
+
+@router.get("/archived/item/{item_id}", response_model=List[MouvementResponse])
+def get_archived_by_item(
+    item_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    return (
+        db.query(MouvementArchived)
+        .filter(MouvementArchived.item_id == item_id, MouvementArchived.deleted == 0)
+        .order_by(MouvementArchived.created_at.desc())
+        .all()
+    )
